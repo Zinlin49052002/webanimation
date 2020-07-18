@@ -1,0 +1,71 @@
+#intro{
+    color:red;
+    
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(jarvis.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#Capa_1{
+    width: 400px;
+    margin: 10% auto;
+    display: block;
+}
+.face,.body,.leg{
+    fill-opacity: 1;
+    stroke:green;
+    stroke-width: 5px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 3000;
+}
+.face,.body,.leg
+{
+    animation:man 10s ease-in-out ;
+    animation-iteration-count: infinite;
+}
+.lab{
+    color: green;
+    margin: 10% top;
+    padding-left: 30%;
+    font-size: 60px;
+   
+}
+.lab{
+    animation: laba 8s ease-in;
+    
+
+}
+@keyframes laba{
+    0%
+    {
+        padding-left: 0%;
+        
+
+    }
+    100%{
+        padding-left: 30%;
+        
+    }
+}
+
+@keyframes man{
+    0%
+    {
+        stroke-dashoffset:3000 ;
+        fill-opacity: 0;
+       
+    }
+    
+    
+    100%
+    {
+        stroke-dashoffset:0 ;
+        fill-opacity: 1;
+        
+    }
+    
+
+}
